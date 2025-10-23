@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+/* 상단 네비게이션 */
+header{ position: fixed; top: 0; left: 0; display: flex; justify-content: space-between; align-items: center; width: 100%; padding: 20px; background: var(--bg-color); box-sizing: border-box; color: var(--font-color);}
+
+/* 로고 */
+header .logo{ display: inline-block; width: 100px; height: 50px; background: url(../img/01_home/logo_01.svg) 0 0 / 100% 100% no-repeat;}
+
+/* 상단 네비게이션 리스트 */
+.gnb .gnb_list{ display: flex; align-items: center; font-weight: bold; font-size: 20px; }
+.gnb_list li { padding: 10px; } 
+.gnb_list li a { position: relative; } 
+
+/* 메뉴 하단 이펙트*/
+.gnb_list li a::before, 
+.gnb_list li a::after { content: ""; position: absolute; bottom: -5px; display: inline-block; height: 3px; } 
+.gnb_list li a::before { width: 100%; background: var(--font-color); opacity: 0; } 
+.gnb_list li a::after { width: 0; left: auto; right: 0; background: var(--main-color); transition: all 0.7s ease 0s; } 
+.gnb_list li:hover a::before { opacity: 1; } 
+.gnb_list li:hover a::after { width: 100%; left: 0; right: auto; } 
+
+/* 햄버거 클릭시 메뉴 */
+.gnb.on { position: fixed; top: 0; left: 0; display: flex; justify-content: center; width: 100%; height: 100%; background: #2e2e2e;}
+.gnb.on .gnb_list{ flex-flow: column; justify-content: center; }
+.gnb.on .gnb_list li{ padding: 40px; font-size: 30px; }
+
+/* 햄버거 버튼 */
+.mobile_btn_box{ position: relative; width: 40px; height: 40px; }
+.mobile_btn_box button{ position: absolute; display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; background: none; border: none; font-size: 40px; color: var(--font-color);}
+.mobile_btn_box button.off{ display: none;}
+.mobile_btn_box button:hover{ color: var(--main-color); transition: .6s color ease 0s;}
+

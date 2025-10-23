@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+@media (min-width: 1024px){
+  .gnb { display: flex; } 
+  .mobile_btn_box { display: none; } 
+  }
+
+@media (max-width: 1023px){
+  .gnb { display: none; } 
+  .mobile_btn_box { display: flex; } 
+  }
+
+@media (max-width: 479px){
+  .gnb.on .gnb_list li { padding: 20px; } 
+  }

@@ -1,20 +1,20 @@
 $(document).ready(function(){
 
-    $('.fa-bars').click(function(){
+    $('.open_btn').click(function(){
         $('nav').addClass('on')
-        $('.fa-bars').addClass('off')
-        $('.fa-close').removeClass('off')
+        $('.open_btn').addClass('off')
+        $('.close_btn').removeClass('off')
     })
 
-    $('.fa-close').click(function(){
+    $('.close_btn').click(function(){
         $('nav').removeClass('on')
-        $('.fa-close').addClass('off')
-        $('.fa-bars').removeClass('off')
+        $('.close_btn').addClass('off')
+        $('.open_btn').removeClass('off')
     })
     $('nav > ul li a').click(function(){
         $('nav').removeClass('on')
-        $('.fa-close').addClass('off')
-        $('.fa-bars').removeClass('off')
+        $('.close_btn').addClass('off')
+        $('.open_btn').removeClass('off')
     })
 
     

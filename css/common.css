@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+@import url(./reset.css);
+@import url(./font.css);
+
+:root {
+  /* 본문용 기본 폰트 */
+  --font-body: 'Pretendard', 'Noto Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic',-apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI','Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
+
+  /* 제목용 */
+  --font-title: 'Gowun Batang', 'JSongMyung', serif;
+
+  /* 포인트용 (영문, 로고 등) */
+  --font-point: 'Fugaz One', 'Cafe24', sans-serif;
+
+  /* 손글씨 스타일 */
+  --font-hand: 'Caveat', cursive;
+
+  --font-color: #ffffff;
+  --bg-color: #2e2e2e;
+  --main-color: #20b085;
+}
+
+html{
+  --font-color: #ffffff
+}
+
+body{
+  color: var(--font-color);
+  background-color: var(--bg-color);
+  font-family: Pretendard;
+}
+body.light{
+  --font-color: #2e2e2e;
+  --bg-color: #cecece;
+}
+

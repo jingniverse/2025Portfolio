@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+/* Google Fonts (Caveat, Gowun Batang, Fugaz One, Noto Sans KR)*/
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Gowun+Batang:wght@400;700&family=Fugaz+One&family=Noto+Sans+KR:wght@100..900&display=swap');
+
+/* Noonnu Fonts */
+/* JSongMyung */
+@font-face {
+  font-family: 'JSongMyung';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/JSongMyung-Regular-KO.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Pretendard */
+@font-face {
+  font-family: 'Pretendard';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Cafe24 */
+@font-face {
+  font-family: 'Cafe24';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
