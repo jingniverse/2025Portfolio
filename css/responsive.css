@@ -1,15 +1,44 @@
 @charset "UTF-8";
 
-@media (min-width: 1024px){
+@media (min-width: 1025px){
+  /* 햄버거메뉴 */
   .gnb { display: flex; } 
   .mobile_btn_box { display: none; } 
-  }
 
-@media (max-width: 1023px){
+}
+
+@media (max-width: 1024px){
+  /* 햄버거메뉴 */
   .gnb { display: none; } 
   .mobile_btn_box { display: flex; } 
-  }
+  
+  /* HOME page, home_section */
+  .home_section .home_txt_box { padding:130px 0 100px 50px;} 
+  .home_section .home_txt.top { width: 600px; font-size: 80px; line-height:90px; } 
+  .home_section .home_txt.bottom { width: 450px;} 
+  .home_txt.bottom .role_txt { padding-right: 30px; } 
 
+}
+
+@media (max-width: 768px){
+/* HOME page, home_section */
+
+  .home_section .home_txt_box { padding:100px 0 100px 40px;} 
+  .home_section .home_txt.top { width: 430px; font-size: 55px; line-height:70px; } 
+  .home_section .home_txt.bottom { width: 430px;} 
+  .home_txt.bottom .role_txt { padding-right: 20px; } 
+
+}
 @media (max-width: 479px){
+  /* 햄버거 메뉴 간격 */
   .gnb.on .gnb_list li { padding: 20px; } 
+
+
+  /* HOME page, home_section */
+  .home_section .home_txt_box { padding:100px 0 100px 20px;} 
+  .home_section .home_txt.top { width: 320px; font-size: 43px; line-height:50px; } 
+  .home_section .home_txt.bottom { width: 190px; display: flex; flex-flow: column; gap: 5px; padding-right: 8px;} 
+  .home_txt.bottom .name_txt { font-size: 18px;} 
+  .home_txt.bottom .role_txt { margin-left: 0; padding-right: 0; } 
+
   }
