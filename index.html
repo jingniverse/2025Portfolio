@@ -58,9 +58,11 @@
     <main>
       <!-- 홈 섹션 -->
       <section id="home" class="home_section page">
-        <h2 class="blind">home</h2>
+        
+        <!-- 텍스트 영역 -->
+        <article class="home_content">
+          <h2 class="blind">home</h2>
           
-        <article class="home_txt_box">
           <p class="home_txt top dot">YeongHwan's portfolio</p>
 
           <span class="home_txt bottom">
@@ -68,123 +70,500 @@
             <span class="role_txt">Web Publisher</span>
           </span>
         </article>
-
       </section>
       <!-- 홈 섹션 끝-->  
       
       <!-- About me 섹션 -->
       <section id="about" class="about_section page">
+
+        <!-- 프로필 영역 -->
         <article class="about_content">
           <h2 class="dot">about me</h2>
 
-          <!-- 인용글 -->
-          <p class="quote">
-            <span class="en">Life is a Matter of<br> Direction not Speed</span>
-            <span class="ko">
-              삶은 신속한 달음보다 어디로 향하는지에 그 가치가 있다.<br>
-              목표한 방향으로 끈질기게 나아가, 인생을 의미 있게 만드는 사람이 되겠습니다
-            </span>
-          </p>
-
           <!-- 프로필 전체 -->
           <div class="profile">
-            <!-- 왼쪽 프로필 정보 -->
-            <div class="profile_basic">
-              <!-- 프로필 사진 -->
-              <div class="pro_pic">
-                <img src="./img/my.png" alt="프로필 사진">
-              </div>
+            
+            <!-- 인용글 -->
+            <p class="quote">
+              <span class="en">Life is a Matter of<br> Direction not Speed</span>
+              <span class="ko">
+                삶은 신속한 달음보다 어디로 향하는지에 그 가치가 있다.<br>
+                목표한 방향으로 끈질기게 나아가, 인생을 의미 있게 만드는 사람이 되겠습니다
+              </span>
+            </p>
 
-              <!-- 기본 정보 리스트 -->
-              <ul class="basic_list">
-                <li>
-                  <span class="en">Name</span>
-                  <span>김영환</span>
-                </li>
-                <li>
-                  <span class="en">Birth</span>
-                  <span>92.12.23</span>
-                </li>
-                <li>
-                  <span class="en">Email</span>
-                  <span>hwanblisher@gmail.com</span>
-                </li>
-                <li class="certificate">
-                  <span class="en">Certificate</span>
-                  <ul>
-                    <li class="cert_list">
-                      <span>운전면허 1종 보통</span>
-                      <span>사회복지사 1급, 2급</span>
-                      <span>웹디자인기능사</span>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
+            <!-- 프로필 사진 -->
+            <div class="profile_img">
+              <img src="./img/02_aboutme/my.png" alt="프로필 사진">
             </div>
 
-            <!-- 오른쪽 프로필 정보  -->
-            <div class="profile_detail">
+            <!-- 프로필 정보 -->
+            <div class="profile_info">
               <h3 class="blind">profile</h3>
 
-              <!-- 학력 / 경력 리스트 -->
-              <ul class="detail_list">
-                <li class="education">
-                  <span class="en">Education</span>
-
-                  <ul class="edu_list">
-                    <li>
-                      <span>2023.07 ~ 2023.12</span>
-                      <span>UI/UX 반응형 웹 디자인& 퍼블리셔 양성과정</span>
-                    </li>
-                    <li>
-                      <span>2020.02</span>
-                      <span>여주대학교 사회복지상담학과 졸업</span>
-                    </li>
-                  </ul>
-                </li>
-
-                <li class="experience">
-                  <span class="en">Experience</span>
-                  
-                  <ul class="exp_list">
-                      <li>
-                        <span>2024.05 ~ 2025.08</span>
-                        <span>(주) 아이스캔디 웹 퍼블리셔</span>
+              <!-- 기본 리스트 -->
+              <div class="info_basic">
+                <!-- 기본 신상 정보 -->
+                <ul class="info_list">
+                  <li>
+                    <span class="list_name en">Name</span>
+                    <span>김영환</span>
+                  </li>
+                  <li>
+                    <span class="list_name en">Birth</span>
+                    <span>92.12.23</span>
+                  </li>
+                  <li>
+                    <span class="list_name en">Email</span>
+                    <span>hwanblisher@gmail.com</span>
+                  </li>
+                  <li>
+                    <span class="list_name en">Certificate</span>
+                    <ul>
+                      <li class="list_item">
+                        <span>운전면허 1종 보통</span>
+                        <span>사회복지사 1급, 2급</span>
+                        <span>웹디자인기능사</span>
                       </li>
-                      <li>
-                        <span>2022.11 ~ 2023.04</span>
-                        <span>함께재가 노인복지센터 사회복지사</span>
-                      </li>
-                      <li>
-                        <span>2020.09 ~ 2021.02</span>
-                        <span>여주대학교 코디네이터</span>
-                      </li>
-                  </ul>
-                </li>
-              </ul>
-
-              <!-- 스킬 리스트 -->
-              <div class="skills">
-                <h4 class="en">skill</h4>
-                <ul class="s_list">
-                  <li class="ps en"><span>Photoshop</span></li>
-                  <li class="il en"><span>Illustrator</span></li>
-                  <li class="jq en"><span>Jquery</span></li>
-                  <li class="js en"><span>Javascript</span></li>
-                  <li class="ht en"><span>HTML5</span></li>
-                  <li class="cs en"><span>CSS3</span></li>
-                  <li class="vs en"><span>VSCODE</span></li>
-                  <li class="fi en"><span>Figma</span></li>
+                    </ul>
+                  </li>
                 </ul>
               </div>
+
+              <!-- 디테일 리스트  -->
+              <div class="info_detail">
+
+                <!-- 학력 / 경력 리스트 -->
+                <ul class="info_list">
+                  <li class="education">
+                    <span class="list_name en">Education</span>
+
+                    <ul class="info_list">
+                      <li class="list_item">
+                        <span class="date">2023.07 ~ 2023.12</span>
+                        <span>UI/UX 반응형 웹 디자인& 퍼블리셔 양성과정</span>
+                      </li>
+                      <li class="list_item">
+                        <span class="date">2020.02</span>
+                        <span>여주대학교 사회복지상담학과 졸업</span>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="experience">
+                    <span class="list_name en">Experience</span>
+                    
+                    <ul class="info_list">
+                      <li class="list_item">
+                        <span class="date">2024.05 ~ 2025.08</span>
+                        <span>(주) 아이스캔디 웹 퍼블리셔</span>
+                      </li>
+                      <li class="list_item">
+                        <span class="date">2022.11 ~ 2023.04</span>
+                        <span>함께재가 노인복지센터 사회복지사</span>
+                      </li>
+                      <li class="list_item">
+                        <span class="date">2020.09 ~ 2021.02</span>
+                        <span>여주대학교 코디네이터</span>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+
+              </div>
+            </div>
+            
+            <!-- 스킬 리스트 -->
+            <div class="skills">
+              <span class="list_name en">Skill</span>
+              
+              <ul class="skill_list">
+                <li class="ps en"><span>Photoshop</span></li>
+                <li class="il en"><span>Illustrator</span></li>
+                <li class="jq en"><span>Jquery</span></li>
+                <li class="js en"><span>Javascript</span></li>
+                <li class="ht en"><span>HTML5</span></li>
+                <li class="cs en"><span>CSS3</span></li>
+                <li class="vs en"><span>VSCODE</span></li>
+                <li class="fi en"><span>Figma</span></li>
+              </ul>
             </div>
           </div>
+
         </article>
       </section>
       <!-- About me 섹션 끝 -->
+
+      <!-- publishing 섹션 -->
+      <section id="publishing" class="publishing_section page">
+        <article class="publishing_content">
+          <h2 class="dot">publishing</h2>
+
+          <!-- 보기 전환 버튼 -->
+          <ul class="view_switch">
+            <!-- 전체 보기 -->
+            <li class="on">
+              <span class="blind">detail view</span>
+              <button>
+                <i class="fa-solid fa-expand"></i>
+              </button>
+            </li>
+
+            <!-- 카드 보기 -->
+            <li>
+              <span class="blind">card view</span>
+              <button>
+                <i class="fa-solid fa-border-all"></i>
+              </button>
+            </li>
+            
+            <!-- 표 보기 -->
+            <li>
+              <span class="blind">list view</span>
+              <button>
+                <i class="fa-solid fa-list"></i>
+              </button>
+            </li>
+          </ul>
+
+          <!-- 뷰 스타일 -->
+          <ul class="view_style">
+            <!-- 전체 보기 -->
+            <li class="detail_view ">
+              <!-- 슬라이드 -->
+              <div class="slide_wrap">
+                <!-- 슬라이드 컨텐츠 -->
+                <div class="slide_content">
+                  <ul class="slide_list">
+                    <!-- 교회 -->
+                    <li class="project church">
+                      <span class="category_tag en"><i>Responsive Web</i>Self Design Project</span>
+                      
+                      <!-- 프로젝트 디테일 -->
+                      <div class="project_detail">
+                        <!-- 디테일 이미지 -->
+                        <div class="project_img">
+                          <a href="https://jingniverse.github.io/church/" target="_blank" tabindex="-1" aria-hidden="true" title="벧엘동산교회 바로가기">
+                            <img src="./img/03_publishing/chu.svg" alt="교회로고">
+                          </a>
+                        </div>
+
+                        <!-- 디테일 정보 -->
+                        <div class="project_info">
+                          <div class="site_tit">
+                            <a href="https://jingniverse.github.io/church/" target="_blank" tabindex="-1" aria-hidden="true" title="벧엘동산교회 바로가기">벧엘동산교회</a>
+                            <span class="project_tag">#PC #MOBILE #반응형</span>
+                          </div>
+                          
+                          <ul class="project_list">
+                            <li>
+                              <span class="list_name">page</span>
+                              <span>Main + Sub 3page</span>
+                            </li>
+                            <li>
+                              <span class="list_name">tool</span>
+                              <span>HTML, CSS, JAVASCRIPT</span>
+                            </li>
+                          </ul>
+                          
+                          <!-- 페이지 링크 박스 -->
+                          <div class="project_link_box en">
+                            <a href="https://jingniverse.github.io/church/" target="_blank" title="벧엘동산교회 바로가기" class="link_btn redesign"><span>go design site</span></a>
+                          </div>    
+                        </div>
+                      </div>
+                    </li>
+
+                    <!-- 네이버 -->
+                    <li class="project naver">
+                      <span class="category_tag en"><i>clone coding</i>Clone Coding</span>
+                      
+                      <!-- 프로젝트 디테일 -->
+                      <div class="project_detail">
+                        <!-- 디테일 이미지 -->
+                        <div class="project_img">
+                          <a href="https://jingniverse.github.io/javer/" target="_blank" tabindex="-1" aria-hidden="true" title="네이버 바로가기">
+                            <img src="./img/03_publishing/Naver_icon_2018.svg" alt="">
+                          </a>
+                        </div>
+
+                        <!-- 디테일 정보 -->
+                        <div class="project_info">
+                          <div class="site_tit">
+                            <a href="https://jingniverse.github.io/javer/" target="_blank" tabindex="-1" aria-hidden="true" title="네이버 바로가기">네이버</a>
+                            <span class="project_tag">#PC</span>
+                          </div>
+                            
+                          <ul class="project_list">
+                            <li>
+                              <span class="list_name">page</span>
+                              <span>Main</span>
+                            </li>
+                            <li>
+                              <span class="list_name">tool</span>
+                              <span>HTML, CSS, JAVASCRIPT</span>
+                            </li>
+                          </ul>
+                          
+                          <!-- 페이지 링크 박스 -->
+                          <div class="project_link_box en">
+                            <a href="https://jingniverse.github.io/javer/" target="_blank" title="네이버 바로가기" class="link_btn redesign"><span>go design site</span></a>
+                          </div>    
+                        </div>
+                      </div>
+                    </li>
+
+                    <!-- 동아제약 -->
+                    <li class="project donga">
+                      <span class="category_tag en"><i>Responsive Web</i>Redesign Project</span>
+                      
+                      <!-- 프로젝트 디테일 -->
+                      <div class="project_detail">
+                        <!-- 디테일 이미지 -->
+                        <div class="project_img">
+                          <a href="https://jingniverse.github.io/last/DONG_A/" target="_blank" tabindex="-1" aria-hidden="true" title="리디자인 동아제약 바로가기">
+                            <img src="./img/03_publishing/Asset 11.svg" alt="동아제약로고">
+                          </a>
+                        </div>
+
+                        <!-- 디테일 정보 -->
+                        <div class="project_info">
+                          <div class="site_tit">
+                            <a href="https://jingniverse.github.io/last/DONG_A/" target="_blank" tabindex="-1" aria-hidden="true" title="리디자인 동아제약 바로가기">동아제약</a>
+                            <span class="project_tag">#PC #mobile #반응형</span>
+                          </div>
+                          
+                          <ul class="project_list">
+                            <li>
+                              <span class="list_name">page</span>
+                              <span>Main</span>
+                            </li>
+                            <li>
+                              <span class="list_name">tool</span>
+                              <span>HTML, CSS, JAVASCRIPT</span>
+                            </li>
+                          </ul>
+
+                          <!-- 페이지 링크 박스 -->
+                          <div class="project_link_box en">
+                            <a href="#" class="link_btn" title="리디자인 동아제약 팝업보기"><span>plan</span></a>
+                            <a href="http://www.dapharm.com/Main.da" target="_blank" title="동아제약 바로가기" class="link_btn"><span>before</span></a>
+                            <a href="https://jingniverse.github.io/last/DONG_A/" target="_blank" title="리디자인 동아제약 바로가기"class="link_btn redesign"><span>go redesign site</span></a>
+                          </div>    
+                        </div>
+                      </div>
+                    </li>
+
+                    <!-- 엠게임 -->
+                    <li class="project mgame">
+                      <span class="category_tag en"><i>Redesign</i>Redesign Project</span>
+                      
+                      <!-- 프로젝트 디테일 -->
+                      <div class="project_detail">
+                        <!-- 디테일 이미지 -->
+                        <div class="project_img">
+                          <a href="https://jingniverse.github.io/mgame/" target="_blank" title="리디자인 엠게임 바로가기">
+                            <img src="./img/03_publishing/mgame.svg" alt="엠게임로고">
+                          </a>
+                        </div>
+
+                        <!-- 디테일 정보 -->
+                        <div class="project_info">
+                          <div class="site_tit">
+                            <a href="https://jingniverse.github.io/mgame/" target="_blank" tabindex="-1" aria-hidden="true" title="리디자인 엠게임 바로가기">Mgame</a>
+                            <span class="project_tag">#PC</span>
+                          </div>
+                            
+                          <ul class="project_list">
+                            <li>
+                              <span class="list_name">page</span>
+                              <span>Main</span>
+                            </li>
+                            <li>
+                              <span class="list_name">tool</span>
+                              <span>HTML, CSS, JAVASCRIPT</span>
+                            </li>
+                            <li>
+                              <span class="list_name">참여</span>
+                              <span>추천, 신규, 전체게임</span>
+                            </li>
+                          </ul>
+
+                          <!-- 페이지 링크 박스 -->
+                          <div class="project_link_box en">
+                            <a href="https://www.figma.com/file/J7dKJUey7fSLhvZwqjx2B0/Untitled?type=design&node-id=100%3A2&mode=design&t=3o3DGcz8XRoExJiV-1" class="link_btn" target="_blank" title="엠게임 리디자인 피그마로 보러가기"><span>plan</span></a>
+                            <a href="https://www.mgame.com/" title="엠게임 바로가기" class="link_btn"><span>before</span></a>
+                            <a href="https://jingniverse.github.io/mgame/" target="_blank" title="리디자인 엠게임 바로가기" class="link_btn redesign"><span>go redesign site</span></a>
+                          </div>    
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                
+                <!-- 슬라이드 닷, 버튼 -->
+                <div class="slider_pagination">
+                  <ul class="slider_dot_box">
+                    <li class="slide_dot on"></li>
+                    <li class="slide_dot"></li>
+                    <li class="slide_dot"></li>
+                    <li class="slide_dot"></li>
+                  </ul>
+
+                  <button class="prev"><i class="fa-solid fa-angle-left"></i></button>
+                  <button class="next"><i class="fa-solid fa-angle-right"></i></button>
+                </div>
+              </div>
+            </li>
+
+            <!-- 카드 뷰 -->
+            <li class="card_view">
+              <!-- 교회 -->
+              <div class="project church">
+                <a class="card_box" href="https://jingniverse.github.io/church/" target="_blank" title="벧엘동산교회 바로가기">
+                  <div class="card_info">
+                    <span class="site_tit">벧엘동산교회</span>
+                    <span>#PC #MOBILE #반응형</span>
+                    <span class="detail">
+                      Page
+                      <span>Main+Sub3</span>
+                    </span>
+                  </div>
+                </a>
+              </div>
+
+              <!-- 네이버 -->
+              <div class="project naver">
+                <a class="card_box" href="https://jingniverse.github.io/javer/" target="_blank" title="네이버 바로가기">
+                  <div class="card_info">
+                    <span class="site_tit">네이버</span>
+                    <span>#PC</span>
+                    <span class="detail">
+                      Page
+                      <span>Main</span>
+                    </span>
+                  </div>
+                </a>
+              </div>
+
+              <!-- 동아제약 -->
+              <div class="project donga">
+                <a class="card_box" href="https://jingniverse.github.io/last/DONG_A/" target="_blank" title="리디자인 동아제약 바로가기">
+                  <div class="card_info">
+                    <span class="site_tit">동아제약</span>
+                    <span>#PC #MOBILE #반응형</span>
+                    <span class="detail">
+                      Page
+                      <span>Main</span>
+                    </span>
+                  </div>
+                </a>
+              </div>
+
+              <!-- 엠게임 -->
+              <div class="project mgame">
+                <a class="card_box" href="https://jingniverse.github.io/mgame/" target="_blank" title="리디자인 엠게임 바로가기">
+                  <div class="card_info">
+                    <span class="site_tit">Mgame</span>
+                    <span>#PC</span>
+                    <span class="detail">
+                      Page
+                      <span>Main</span>
+                    </span>
+                  </div>
+                </a>
+              </div>
+            </li>
+
+            <!-- 리스트 뷰 -->
+            <li class="list_view on">
+              <table>
+                <thead>
+                  <th>name</th>
+                  <th>style</th>
+                  <th>page</th>
+                  <th>tool</th>
+                  <th>go site</th>
+                </thead>
+
+                <tbody>
+                  <!-- 교회 -->
+                  <tr>
+                    <td>벧엘동산교회</td>
+                    <td>
+                      #PC #MOBILE #반응형
+                      <span>#Self Design Project</span>
+                    </td>
+                    <td>main + Sub 3page</td>
+                    <td>HTML, CSS, JAVASCRIPT</td>
+                    <td class="link">
+                      <a href="https://jingniverse.github.io/church/" target="_blank" title="벧엘동산교회 바로가기">바로가기</a>
+                    </td>
+                  </tr>
+
+                  <!-- 네이버 -->
+                  <tr>
+                    <td>네이버</td>
+                    <td>
+                      #PC
+                      <span>#Clone Coding</span>
+                    </td>
+                    <td>main</td>
+                    <td>HTML, CSS, JAVASCRIPT</td>
+                    <td class="link">
+                      <a href="https://jingniverse.github.io/javer/" target="_blank" title="네이버 바로가기">바로가기</a>
+                    </td>
+                  </tr>
+
+                  <!-- 동아제약 -->
+                  <tr>
+                    <td>동아제약</td>
+                    <td>
+                      #PC #MOBILE #반응형
+                      <span>#Redesign Project</span>
+                    </td>
+                    <td>main</td>
+                    <td>HTML, CSS, JAVASCRIPT</td>
+                    <td class="link">
+                      <a href="https://jingniverse.github.io/last/DONG_A/" target="_blank" title="리디자인 동아제약바로가기">바로가기</a>
+                    </td>
+                  </tr>
+                  
+                  <!-- 엠게임 -->
+                  <tr>
+                    <td>Mgame</td>
+                    <td>
+                      #PC
+                      <span>#Redesign Project</span>
+                    </td>
+                    <td>main</td>
+                    <td>HTML, CSS, JAVASCRIPT</td>
+                    <td class="link">
+                      <a href="https://jingniverse.github.io/mgame/" target="_blank" title="리디자인 엠게임 바로가기">바로가기</a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </li>
+          </ul>
+        </article>
+      </section>
+      <!-- publishing 섹션 끝 -->
+
     </main>
 
     <footer></footer>
   </div>
+
+  <section>
+    <article class="plan_popup">
+      <div class="dongainfo_popup">
+        <button class="close">close</button>
+        <div>
+          <img src="./img/03_publishing/donga_info.png" alt="">
+        </div>
+      </div>
+    </article>
+  </section>
 </body>
 </html>

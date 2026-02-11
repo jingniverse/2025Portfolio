@@ -31,13 +31,167 @@ header .logo { display: inline-block; width: 100px; height: 50px; background: ur
 .mobile_btn_box button:hover { color: var(--main-color); transition: .6s color ease 0s; } 
 
 /* home_section */
-.home_section .home_txt_box { position: relative; display: flex; flex-flow: column; justify-content: space-between; padding-left: 150px; } 
-.home_txt_box .home_txt.top { position: relative; width: 720px; font-size: 100px; line-height: 100px; font-weight: bold; text-transform: uppercase; } 
-.home_txt_box .home_txt.top::after { bottom: 13px; right: 170px; width: 13px; height: 13px;} 
-.home_txt_box .home_txt.bottom { display: inline-flex; align-self: flex-end; width: 100%; max-width: 500px; padding-bottom: 5px; border-bottom: 1px solid var(--main-color); text-align: right; font-size: 20px; line-height: 20px; letter-spacing: 2px; text-transform: capitalize; } 
+.home_section .home_content { position: relative; display: flex; flex-flow: column; justify-content: space-between; padding-left: 150px; } 
+.home_content .home_txt.top { position: relative; width: 720px; font-size: 100px; line-height: 100px; font-weight: bold; text-transform: uppercase; } 
+.home_content .home_txt.bottom { display: inline-flex; align-self: flex-end; width: 100%; max-width: 500px; padding-bottom: 5px; border-bottom: 1px solid var(--main-color); text-align: right; font-size: 20px; line-height: 20px; letter-spacing: 2px; text-transform: capitalize; } 
 .home_txt.bottom .role_txt { padding-right: 80px; font-size: 23px; margin-left: 30px; color: var(--main-color); font-weight: 600; } 
 
 /* about_section */
-.quote { position: absolute; width: 510px; display: flex; flex-flow: column; right: 0; top: 150px; } 
-.quote .en { font-family: Caveat; font-size: 60px; } 
-.quote .ko { margin-top: 10px; margin-left: 20px; font-size: 15px; line-height: 30px; font-family: Pretendard; } 
+.about_content{ width: 1440px; margin: 0 auto;}
+.about_content .profile{ position: relative; display: flex; justify-content: center; align-items: flex-end; gap: 50px;}
+
+/* 인용글 */
+.profile .quote { position: absolute; right: 0; top: -50px; display: flex; flex-flow: column; width: 510px; } 
+.profile .quote .en { font-size: 50px; } 
+.profile .quote .ko { margin:10px 0 0 15px; line-height: 25px; } 
+
+/* 프로필 사진 */
+.profile .profile_img { position: relative; width: 400px; height:600px; overflow: hidden; border-radius: 10px;} 
+.profile .profile_img img { width: 100%; height: 100%; object-fit: cover; } 
+.profile .profile_img::after { content: ""; border: 5px solid var(--main-color); position: absolute; left: 0; top: 0; width: 100%; height: 100%; box-sizing: border-box;  border-radius: 10px;}
+
+/* 프로필 정보 */
+.profile .en{ font-size: 30px;}
+.profile_info{ display: flex; flex-flow: column; justify-content: flex-end; gap: 40px; font-size: 20px; }
+.profile_info .info_list li { display: flex; gap: 0 50px; }
+.profile_info .info_list li + li { margin-top: 15px; }
+.info_list .list_name{ display: inline-flex; justify-content: flex-end;  flex-shrink: 0; width: 130px; }
+.info_list .list_item { flex-flow: column; flex-shrink: 0; width: 360px; }
+.info_list .list_item .date{ font-size: 16px; }
+.info_list span:not(.date){ line-height: 26px;}
+
+/* 스킬 리스트 */
+.skills > .list_name { display: inline-flex; margin-bottom: 20px; } 
+.skill_list { display: flex; flex-flow: wrap;  width: 300px; } 
+.skill_list > li { position: relative; width: 60px; height: 60px; } 
+.skill_list > li + li { margin-left: 60px; } 
+.skill_list > li:nth-of-type(3n) { margin-bottom: 60px; } 
+.skill_list > li:nth-of-type(3n+1) { margin-left: 0; } 
+
+/* 스킬 아이콘 텍스트 */
+.skill_list  li span { position: absolute; left: 50%; bottom: -25px; transform: translateX(-50%); display: flex; justify-content: center; align-items: center; height: 30px; padding: 5px 10px; background: #303030;  border: 1px solid var(--main-color); border-radius: 10px; box-sizing: border-box; font-size: 15px; opacity: 0; z-index: 10; animation: updown2 1.3s ease infinite 1s alternate; } 
+.skill_list li:hover span { opacity: 1; } 
+
+/* 스킬 아이콘 이미지 */
+.skill_list li::after { content: ""; display: inline-block; width: 60px; height: 60px; background: center no-repeat; animation: updown 1.3s ease infinite 1s alternate; } 
+.skill_list li:nth-of-type(1)::after { background-image: url(../img/02_aboutme/ps.png); animation-delay: 1s; }
+.skill_list li:nth-of-type(1) span { animation-delay: 1s; } 
+
+.skill_list li:nth-of-type(2)::after { background-image: url(../img/02_aboutme/illustrator.png) ; animation-delay: 1.2s; }
+.skill_list li:nth-of-type(2) span { animation-delay: 1.2s; } 
+
+.skill_list li:nth-of-type(3)::after { background-image: url(../img/02_aboutme/jq.png) ; animation-delay: 1.4s; }
+.skill_list li:nth-of-type(3) span { animation-delay: 1.4s; } 
+
+.skill_list li:nth-of-type(4)::after { background-image: url(../img/02_aboutme/js.png) ; animation-delay: 1.6s; }
+.skill_list li:nth-of-type(4) span { animation-delay: 1.6s; } 
+
+.skill_list li:nth-of-type(5)::after { background-image: url(../img/02_aboutme/html.png) ; animation-delay: 1.8s; }
+.skill_list li:nth-of-type(5) span { animation-delay: 1.8s; } 
+
+.skill_list li:nth-of-type(6)::after { background-image: url(../img/02_aboutme/css.png) ; animation-delay: 2s; }
+.skill_list li:nth-of-type(6) span { animation-delay: 2s; } 
+
+.skill_list li:nth-of-type(7)::after { background-image: url(../img/02_aboutme/visual.png) ; animation-delay: 2.2s; }
+.skill_list li:nth-of-type(7) span { animation-delay: 2.2s; } 
+
+.skill_list li:nth-of-type(8)::after { background-image: url(../img/02_aboutme/figma.png) ; animation-delay: 2.4s; }
+.skill_list li:nth-of-type(8) span { animation-delay: 2.4s; } 
+
+/* publishing_section */
+/* 보기 전환 버튼 */
+.view_switch { position: relative; display: flex; justify-content: center; gap: 15px; margin-bottom: 20px; } 
+.view_switch li button { display: flex; justify-content: center; align-items: center; width: 33px; height: 33px; border: 2px solid var(--main-color); border-radius: 50%; box-sizing: border-box; background: none; transition: .3s color ease 0s; }
+.view_switch li.on button, 
+.view_switch li:hover button { background: var(--main-color); border-color: #fff; } 
+.view_switch li button i { font-size: 15px; color: var(--main-color); } 
+.view_switch li.on button i ,
+.view_switch li:hover button i { color: #fff; } 
+
+/* 뷰 스타일 */
+.view_style > li { display: none; } 
+.view_style > li.on { display: flex; justify-content: center; } 
+
+/* 전체 보기 슬라이드 */
+.slide_wrap { position: relative; width: 1400px; margin: 0 auto;} 
+
+/* 슬라이드 닷, 버튼 */
+.slider_pagination{ position: relative; display: flex; justify-content: center; margin-top: 60px; }
+.slider_pagination button { position: absolute; top: 50%; width: 50px; height: 50px; border: 3px solid var(--main-color); border-radius: 50%; background: #fff; transform: translateY(-50%); transition: .6s all ease 0s; } 
+.slider_pagination button:hover { background: var(--main-color); } 
+.slider_pagination button i { position: relative; top: 0%; font-size:30px; color: var(--main-color); } 
+.slider_pagination button:hover i { color: #fff; } 
+.slider_pagination .prev { left: 40%; } 
+.slider_pagination .next { right: 40%; } 
+.slider_dot_box { display: flex; justify-content: center; gap: 10px;} 
+.slider_dot_box .slide_dot { width: 10px; height: 10px; background: var(--main-color); border-radius: 50%; opacity: .5; } 
+.slider_dot_box .slide_dot.on { opacity: 1; } 
+
+/* 슬라이드 컨텐트 */
+.slide_content { width: 1400px; overflow: hidden; } 
+.slide_content .slide_list { display: flex; width: 400%; transition: .6s all ease 0s; } 
+.slide_list .project { position: relative; width: 1400px; } 
+
+/* 분류태그 */
+.project .category_tag { position: absolute; top: 5px; right:80px; display: flex; flex-flow: column; font-size: 55px; color: #fff; } 
+.category_tag i { position: absolute; font-size: 20px; left: 78px; top: -5px; color: var(--main-color); } 
+.church .category_tag i { left: 122px; } 
+.naver .category_tag i { left: 46px; } 
+.mgame .category_tag i { left: 100px; } 
+
+/* 프로젝트 디테일 */
+.project_detail { display: flex; gap: 50px;} 
+
+/* 디테일 이미지 */
+.project_detail .project_img { position: relative; width: 450px; height: 450px; border: 5px solid var(--main-color);  border-radius: 20px; background: #fff; overflow: hidden; cursor: pointer;} 
+.project_img a { display: flex; justify-content: center; align-items: center; width: 100%; height: 100%; } 
+.project_img img { width: 300px; height: 300px; transition: .6s all ease 0s; filter: grayscale(1); } 
+.project_img:hover img { transform: scale(1.1); filter: grayscale(0) } 
+
+/* 디테일 정보 */
+.project_detail .project_info { width: 50%; display: flex; flex-flow: column; justify-content: flex-end; gap: 50px; font-size: 20px; } 
+.project_info .site_tit { display: flex; flex-flow: column; gap: 5px; }
+.project_info .site_tit a { position: relative; display: inline-flex; align-self: flex-start; color: var(--bg-color); font-size: 50px; font-family: var(--font-point); -webkit-text-stroke: 1px var(--main-color); } 
+.project_info .site_tit a::after { content: ""; position: absolute; top: -5px; left: 0; display: inline-block; width: 100%; opacity: 0; transition: .6s all ease 0s; } 
+.project_info .site_tit a:hover::after { color: var(--main-color); opacity: 1; } 
+.church .project_info .site_tit a::after { content: "벧엘동산교회"; } 
+.donga .project_info .site_tit a::after { content: "동아제약"; } 
+.naver .project_info .site_tit a::after { content: "네이버"; } 
+.mgame .project_info .site_tit a::after { content: "Mgame"; } 
+.project_info .project_list { display: flex; flex-flow: column; gap: 10px;} 
+.project_list li { display: flex; align-items: flex-end; gap: 20px;} 
+.project_list .list_name { width: 60px; font-size: 25px; text-transform: capitalize; } 
+
+/* 페이지 링크 박스 */
+.project_detail .project_link_box { display: flex; justify-content: center; gap: 50px;} 
+.project_link_box .link_btn { position: relative; display: flex; justify-content: center; align-items: center; width: 150px; height: 50px; padding: 10px 20px; border: 4px solid var(--main-color); border-radius: 20px; color: #fff; font-size: 30px; text-transform: capitalize; transition: .5s all ease 0s; overflow: hidden; } 
+.link_btn::before { content: ""; position: absolute; left: auto; right: 0; display: flex; width: 0; height: 100%; transition: 0.7s all ease 0s; } 
+.link_btn:hover::before { left: 0; right: auto; width: 100%; background: var(--main-color); } 
+.link_btn.redesign { width: 200px; } 
+.link_btn span { z-index: 1; } 
+
+/* 카드보기 */
+.card_view { display: flex; justify-content: center; margin-top: 50px; gap: 80px; }
+.card_view .project { position: relative; width: 300px; height: 300px; background: #fff; border: 5px solid var(--main-color); border-radius: 20px; overflow: hidden;} 
+/* 카드 이미지 */
+.project .card_box { display: flex; justify-content: center; align-items: center; width: 100%; height: 100%; background: center / 150px 150px no-repeat; } 
+.project.church .card_box { background-image: url(../img/03_publishing/chu.svg) } 
+.project.naver .card_box { background-image: url(../img/03_publishing/Naver_icon_2018.svg) } 
+.project.donga .card_box { background-image: url(../img/03_publishing/donga.svg) } 
+.project.mgame .card_box { background-image: url(../img/03_publishing/mgame.svg) } 
+
+/* 카드 정보 */
+.project .card_info { display: flex; flex-flow: column; justify-content: center; align-items: center; gap: 10px; width: 100%; height: 100%; background: #2e2e2ed0; opacity: 0; transition: .6s all ease 0s; } 
+.project:hover .card_info { opacity: 1; } 
+.card_info .site_tit { font-size: 25px; margin-bottom: 20px; color: var(--main-color); font-family: var(--font-point); } 
+.card_info .detail { display: inline-flex; gap: 10px;}
+
+/* 리스트 뷰 */
+.list_view table { width: 1400px; margin-top: 50px; font-size: 20px;} 
+.list_view table th , table td { padding: 10px; text-align: center; border: 2px solid var(--main-color); } 
+.list_view table th { background: #fff; color: var(--main-color); font-weight: bold; text-transform: uppercase;} 
+.list_view table td { text-transform: capitalize; } 
+.list_view table td span { font-weight: bold; color: var(--main-color); margin-left: 10px; } 
+.list_view table .link { transition: .6s all ease 0s;} 
+.list_view table .link:hover  { background: #fff; color: var(--main-color); } 
+

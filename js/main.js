@@ -18,7 +18,7 @@ $(document).ready(function(){
     })
 
     
-    $('.donga .plan').click(function(e){
+    $('.donga .link_btn').click(function(e){
         $('.plan_popup').addClass('on')
         e.preventDefault()
 
@@ -53,44 +53,44 @@ $('.pre_open_page span').click(function(){
 
 
 let count = 0
-$(".content_wrap .next").click(function(){
+$(".slide_wrap .next").click(function(){
     count++
     if(count>3){count=0}
-    $(".pb_list").css("transform",`translateX(${(-25*count)}%)`)
-    $(".page_dot>li").removeClass("on")
-    $(".page_dot>li").eq(count).addClass("on")
+    $(".slide_list").css("transform",`translateX(${(-25*count)}%)`)
+    $(".slide_dot").removeClass("on")
+    $(".slide_dot").eq(count).addClass("on")
 
     if(count==3){
-        $(".content_wrap .next").hide()
+        $(".slide_wrap .next").hide()
      }else {
-     $(".content_wrap .next").show()
+     $(".slide_wrap .next").show()
     }
     if (count === 0) {
-        $(".content_wrap .prev").hide();
+        $(".slide_wrap .prev").hide();
     } else {
-        $(".content_wrap .prev").show();
+        $(".slide_wrap .prev").show();
     }
 })
-$(".content_wrap .prev").click(function(){
+$(".slide_wrap .prev").click(function(){
     count--
     if(count<0){count=3}
-    $(".pb_list").css("transform",`translateX(${(-25*count)}%)`)
-    $(".page_dot>li").removeClass("on")
-    $(".page_dot>li").eq(count).addClass("on")
+    $(".slide_list").css("transform",`translateX(${(-25*count)}%)`)
+    $(".slide_dot").removeClass("on")
+    $(".slide_dot").eq(count).addClass("on")
     if(count==0){
-        $(".content_wrap .prev").hide()
+        $(".slide_wrap .prev").hide()
      }else{
-     $(".content_wrap .prev").show()
+     $(".slide_wrap .prev").show()
     }
     if(count==3){
-        $(".content_wrap .next").hide()
+        $(".slide_wrap .next").hide()
      }else {
-     $(".content_wrap .next").show()
+     $(".slide_wrap .next").show()
     }
     
 })
 $(document).ready(function() {
-    $(".content_wrap .prev").hide(); 
+    $(".slide_wrap .prev").hide(); 
 });
 
 let pcount = 0
@@ -98,8 +98,8 @@ $(".popup_wrap .next").click(function(){
     pcount++
     if(pcount>1){pcount=0}
     $(".popup_list").css("transform",`translateX(${(-50*pcount)}%)`)
-    $(".popup_wrap .page_dot>li").removeClass("on")
-    $(".popup_wrap .page_dot>li").eq(pcount).addClass("on")
+    $(".popup_wrap .slide_dot").removeClass("on")
+    $(".popup_wrap .slide_dot").eq(pcount).addClass("on")
 
     if(pcount==1){
         $(".popup_wrap .next").hide()
@@ -116,8 +116,8 @@ $(".popup_wrap .prev").click(function(){
     pcount--
     if(pcount<0){pcount=1}
     $(".popup_list").css("transform",`translateX(${(-50*pcount)}%)`)
-    $(".popup_wrap .page_dot>li").removeClass("on")
-    $(".popup_wrap .page_dot>li").eq(pcount).addClass("on")
+    $(".popup_wrap .slide_dot").removeClass("on")
+    $(".popup_wrap .slide_dot").eq(pcount).addClass("on")
     if(pcount==0){
         $(".popup_wrap .prev").hide()
      }else{
@@ -139,8 +139,8 @@ $(".banner_wrap .next").click(function(){
     bcount++
     if(bcount>1){bcount=0}
     $(".banner_list").css("transform",`translateX(${(-50*bcount)}%)`)
-    $(".banner_wrap .page_dot>li").removeClass("on")
-    $(".banner_wrap .page_dot>li").eq(bcount).addClass("on")
+    $(".banner_wrap .slide_dot").removeClass("on")
+    $(".banner_wrap .slide_dot").eq(bcount).addClass("on")
 
     if(bcount==1){
         $(".banner_wrap .next").hide()
@@ -157,8 +157,8 @@ $(".banner_wrap .prev").click(function(){
     bcount--
     if(bcount<0){bcount=1}
     $(".banner_list").css("transform",`translateX(${(-50*bcount)}%)`)
-    $(".banner_wrap .page_dot>li").removeClass("on")
-    $(".banner_wrap .page_dot>li").eq(bcount).addClass("on")
+    $(".banner_wrap .slide_dot").removeClass("on")
+    $(".banner_wrap .slide_dot").eq(bcount).addClass("on")
     if(bcount==0){
         $(".banner_wrap .prev").hide()
      }else{
@@ -175,13 +175,13 @@ $(document).ready(function() {
     $(".banner_wrap .prev").hide(); 
 });
 
-$(".viewstyle>li").click(function() {
+$(".view_switch > li").click(function() {
     let etc_li = $(this).index();
 
-    $(".viewstyle>li").removeClass("on");
+    $(".view_switch > li").removeClass("on");
     $(this).addClass("on");
 
-    $(".v_s_output>li").each(function(i) {
+    $(".view_style > li").each(function(i) {
         if (i === etc_li) {
             $(this).addClass("on");
         } else {
@@ -242,8 +242,8 @@ $(".popup_wrap .next").click(function(){
     pcount++
     if(pcount>3){pcount=0}
     $(".popup_list").css("transform",`translateX(${(-25*pcount)}%)`)
-    $(".popup_wrap .page_dot>li").removeClass("on")
-    $(".popup_wrap .page_dot>li").eq(pcount).addClass("on")
+    $(".popup_wrap .slide_dot").removeClass("on")
+    $(".popup_wrap .slide_dot").eq(pcount).addClass("on")
 
     if(pcount==3){
         $(".popup_wrap .next").hide()
@@ -260,8 +260,8 @@ $(".popup_wrap .prev").click(function(){
     pcount--
     if(pcount<0){pcount=3}
     $(".popup_list").css("transform",`translateX(${(-25*pcount)}%)`)
-    $(".popup_wrap .page_dot>li").removeClass("on")
-    $(".popup_wrap .page_dot>li").eq(pcount).addClass("on")
+    $(".popup_wrap .slide_dot").removeClass("on")
+    $(".popup_wrap .slide_dot").eq(pcount).addClass("on")
     if(pcount==0){
         $(".popup_wrap .prev").hide()
      }else{

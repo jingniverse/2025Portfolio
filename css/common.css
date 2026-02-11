@@ -11,7 +11,7 @@
   --font-title: 'Gowun Batang', 'JSongMyung', serif;
 
   /* 포인트용 (영문, 로고 등) */
-  --font-point: 'Fugaz One', 'Cafe24', sans-serif;
+  --font-point: 'Cafe24', 'Fugaz One', sans-serif;
 
   /* 손글씨 스타일 */
   --font-hand: 'Caveat', cursive;
@@ -43,6 +43,21 @@ section > article{
   position: relative;
 }
 
-.page h2 { position: relative; margin-bottom: 100px; font-size: 60px; text-transform: capitalize; text-align: center; font-weight: bold; } 
-.dot:after{ content: ""; position: absolute; bottom: 5px; width: 10px; height: 10px; border-radius: 50%; background: var(--main-color);}
-.en{ font-family: var(--font-hand);}
+button{ 
+  cursor: pointer; 
+}
+
+.en{ color:var(--main-color); font-family: var(--font-hand); }
+.page .blind { position: absolute; width: 1px; height: 1px; clip: rect(0 0 0 0); overflow: hidden; margin: 0; padding: 0;} 
+.page h2 { position: relative; font-size: 60px; text-transform: capitalize; text-align: center; font-weight: bold; } 
+.page h2:not(.blind){ margin-bottom: 100px; } 
+.dot:after{ content: ""; display: inline-block; width: 8px; height: 8px; margin-left: 5px; border-radius: 50%; background: var(--main-color);}
+
+@keyframes updown { 
+  0% { transform:translateY(0px) } 
+  100% { transform:translateY(-10px) } 
+  }
+@keyframes updown2 { 
+  0% { transform:translate(-50%, 0px) } 
+  100% { transform:translate(-50%, -10px) } 
+  }
