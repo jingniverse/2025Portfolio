@@ -55,12 +55,12 @@ $('.pre_open_page span').click(function(){
 let count = 0
 $(".slide_wrap .next").click(function(){
     count++
-    if(count>3){count=0}
-    $(".slide_list").css("transform",`translateX(${(-25*count)}%)`)
+    if(count>2){count=0}
+    $(".slide_list").css("transform",`translateX(${(-33*count)}%)`)
     $(".slide_dot").removeClass("on")
     $(".slide_dot").eq(count).addClass("on")
 
-    if(count==3){
+    if(count==2){
         $(".slide_wrap .next").hide()
      }else {
      $(".slide_wrap .next").show()
@@ -73,8 +73,8 @@ $(".slide_wrap .next").click(function(){
 })
 $(".slide_wrap .prev").click(function(){
     count--
-    if(count<0){count=3}
-    $(".slide_list").css("transform",`translateX(${(-25*count)}%)`)
+    if(count<0){count=2}
+    $(".slide_list").css("transform",`translateX(${(-33*count)}%)`)
     $(".slide_dot").removeClass("on")
     $(".slide_dot").eq(count).addClass("on")
     if(count==0){
@@ -82,7 +82,7 @@ $(".slide_wrap .prev").click(function(){
      }else{
      $(".slide_wrap .prev").show()
     }
-    if(count==3){
+    if(count==2){
         $(".slide_wrap .next").hide()
      }else {
      $(".slide_wrap .next").show()

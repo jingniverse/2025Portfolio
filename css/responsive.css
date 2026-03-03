@@ -7,6 +7,17 @@
 
 }
 
+@media (max-width: 1440px){
+  .about_content {width: 1000px; }
+  .about_content .profile {flex-flow: wrap; gap: 50px 30px;}
+  .skill_list { width: 100%; flex-flow: nowrap;}
+  .profile .quote{ position: relative; top: 0; left: 0; width: 100%; align-items: center;}
+  .profile .quote .en { flex-flow: row; gap: 20px}
+  .quote .ko { position: absolute; top: 100%; right: 30px;}
+  .slide_wrap{ width: 1000px; }
+  .slide_list .project{ width: 1000px; }
+}
+
 @media (max-width: 1024px){
   /* 햄버거메뉴 */
   .gnb { display: none; } 
